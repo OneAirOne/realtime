@@ -1,0 +1,39 @@
+# dirToDo = répertoire de lecture du watcher
+# dirExport = répertoire de sortie JSON
+# dirArchive = répertoire d'archive 
+# dirError = répertoire d'erreur
+# dirWork = répertoire de travail
+# dirLog = répertoire de log
+# dirIncoming = répertoire temporaire pour les upload
+# elasticHost = adresse ip du cluster elasticsearch
+# elasticPort = port du cluster elasticsearch
+# logPattern = patern des fichiers de log
+# logLevel = niveau de log ('DEBUG' ou 'INFO' ou 'WARN' ou 'ERROR' ou 'FATAL' ou 'UNKNOWN')
+# logStandardOutput = activation de la sortie standard (true ou false)
+# indexType = type des index elasticsearch
+# nbThreadInTheSameTime = nombre de thread max lancé siumultanément
+# nbMaxBulkDocument = nb de document envoyés à ES à chaque requete d'indexation
+# exportJsonDocument = export en doc JSON (true or false)
+# mooveInArchive = deplace le fichier dans un repertoire d'archive, si false le supprime(true or false)
+# indexInElastic = indexation dans Elasticsearch (true or false)
+# indexInInflux = indexation dans influxDB (true or false)
+---
+dirToDo: "/home/adminbi/DATA/GEODATA/TO_DO/"
+dirExport: "/home/adminbi/DATA/GEODATA/EXPORT/"
+dirArchive: "/home/adminbi/DATA/GEODATA/ARCHIVE/"
+dirError: "/home/adminbi/DATA/GEODATA/ERROR/"
+dirWork: "/home/adminbi/DATA/GEODATA/WORK/"
+dirLog: "/home/adminbi/DATA/GEODATA/LOG/"
+dirIncoming: "/home/adminbi/DATA/GEODATA/INCOMING/"
+elasticHost: 127.0.0.1
+elasticPort: 9200
+logPattern: geoData_reader
+logLevel: INFO
+logStandardOutput: false
+indexType: fichier
+nbThreadInTheSameTime: 4
+nbMaxBulkDocument: 1000
+exportJsonDocument: false
+mooveInArchive: true
+indexInElastic: true
+indexInInflux: true
